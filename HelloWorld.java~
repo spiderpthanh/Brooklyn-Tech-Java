@@ -1,0 +1,16 @@
+/**
+ * Auto Generated Java Class.
+ */
+public class HelloWorld {
+  
+  
+  public static void main(String[] args) { 
+    string name = "Thanh";
+    int age = 17;
+    string month = "February";
+    system.out.print("Hello" + name + "\n" + "You are " + age + " years old.");
+  }
+  
+  
+  
+}
