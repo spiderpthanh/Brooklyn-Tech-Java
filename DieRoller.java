@@ -21,6 +21,7 @@ public class DieRoller {
     }
     /*for (int i = 0; i < theRolls.length; i++) {
      theRolls[i] = roll(); */
+    System.out.println(frequency);
     }
     
     /*for (int i = 1; i < theRolls.length; i++) {

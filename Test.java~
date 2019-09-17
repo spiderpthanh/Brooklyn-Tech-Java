@@ -1,0 +1,16 @@
+public class Test 
+{
+  
+  
+ public static void main(String[] args) 
+  { 
+   DiceProbability prob1 = new DiceProbability();
+   
+   // Die die1 = new Die();
+   // System.out.println(die1.roll());
+    //PairOfDice dice = new PairOfDice();
+    //System.out.println(dice.roll());
+  }
+
+  
+}

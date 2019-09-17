@@ -8,14 +8,16 @@ public class DieRoller {
     
     /*int[] theRolls = new int[40];*/
     int[] frequency = new int[7];
-    int numberOfRolls = 40;
+    int numberOfRolls = 1000;
     int rollsSoFar = 0;
+    double percentage = 0;
     while (rollsSoFar < numberOfRolls) {
       frequency [roll()]++;
       rollsSoFar++;
     }
     for (int i = 1; i < frequency.length; i++) {
-      System.out.println("Frequency[" + i + "]=" + frequency[i]);
+      percentage = (frequency[i] / (double)numberOfRolls * 100.0); 
+      System.out.println("Frequency[" + i + "]=" + frequency[i] + " " + percentage + "%");
     }
     /*for (int i = 0; i < theRolls.length; i++) {
      theRolls[i] = roll(); */
