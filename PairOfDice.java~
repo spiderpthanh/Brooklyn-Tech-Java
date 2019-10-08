@@ -8,6 +8,17 @@ public class PairOfDice
     die1 = new Die(); 
     die2 = new Die();
   }
+  public PairOfDice(int size) 
+  { 
+    die1 = new Die(size); 
+    die2 = new Die(size);
+  }
+  public PairOfDice (int size1, int size2)
+  {
+    die1 = new Die(size1);
+    die2 = new Die(size2);
+  }
+  public int getDie1Size()
   public int roll()
   {
     return die1.roll() + die2.roll();

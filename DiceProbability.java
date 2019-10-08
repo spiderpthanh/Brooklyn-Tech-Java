@@ -1,33 +1,53 @@
 public class DiceProbability 
 {
-    private int[] outcomes;
-    private PairOfDice ourDice;
+    private PairOfDice dice;
     private int numberOfRolls;
+    private int[] outcomes; 
     public static final int DEFAULT_ROLLS = 50;
+    
   public DiceProbability()
   { 
     numberOfRolls = DEFAULT_ROLLS;
     outcomes = new int[13];
-    ourDice = new PairOfDice();
+    dice = new PairOfDice();
     //roll();
     //printOutcomes();
     
   }
   public DiceProbability(int numRolls)
   { 
+    dice = new PairOfDice();
     numberOfRolls = numRolls;
     outcomes = new int[13];
-    ourDice = new PairOfDice();
     //roll();
     //printOutcomes();
     
   }
+  
+  public DiceProbability(PairOfDice theDice)
+  {
+    dice = theDice;
+    int a = dice.getDie1Size();
+    int b = dice.getDie2Size();
+    outcomes = new int[a + b + 1];
+    numberOfRolls = DEFAULT_ROLLS;
+  }
+  
+  public DiceProbability(int numRolls, PairOfDice theDice)
+  {
+    dice = theDice;
+    int a = dice.getDie1Size();
+    int b = dice.getDie2Size();
+    outcomes = new int[a + b + 1];
+    numberOfRolls = numRolls;
+  }
+  
   public void roll()
   {
     int rollSoFar = 0;
     while(rollSoFar < numberOfRolls)
     {
-      outcomes[ourDice.roll()]++;
+      outcomes[dice.roll()]++;
       rollSoFar++;
     }
   }

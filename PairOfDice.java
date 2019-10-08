@@ -19,6 +19,15 @@ public class PairOfDice
     die2 = new Die(size2);
   }
   public int getDie1Size()
+  {
+    
+    return die1.getNumberOfSides();
+    
+  }
+  public int getDie2Size()
+  {
+    return die2.getNumberOfSides();
+  }
   public int roll()
   {
     return die1.roll() + die2.roll();
