@@ -26,6 +26,7 @@ public class GuessingGame {
        System.out.println("You have chosen level 1.");
        System.out.println("Guess a number between 1 and 10.");
        int randNum = (int)(Math.random() * Math.pow(10, level)) + 1;
+       System.out.println(randNum);
      } else if (level == 2)
      {
        System.out.println("You have chosen level 2.");
@@ -48,7 +49,13 @@ public class GuessingGame {
   {
     Scanner inputGuess = new Scanner(System.in);
     int guess = inputGuess.nextInt();
-    while (gues)
+    while (guess != randNum)
+    {
+      System.out.print("Nope! Try again:");
+      System.out.println((boolean)(guess == randNum));
+      guess = inputGuess.nextInt();
+    }
+    System.out.println("YEAAHHHHHHHH");
   }
   
 }
