@@ -1,0 +1,27 @@
+public interface NumberGroup
+{
+  boolean contains(int value);
+}
+public class Range implements NumberGroup
+{
+  private int minValue, maxValue;
+
+  public Range(int minValue, int maxValue)
+  {
+    this.minValue = minValue;
+    this.maxValue = maxValue;
+  }
+  
+  public boolean contains(int value)
+  {
+    return minValue <= value && value <= maxValue;
+  }
+}
+public boolean contains(int num)
+{
+  for(NumberGroup group : groupList)
+    if(group.contains(num))
+      return true;
+
+  return false;
+}

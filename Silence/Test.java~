@@ -1,0 +1,14 @@
+public class Test {
+  
+  int[] samples1 = {0, 0, 0, 0, 4, 3, 0, 8, 2, 2, 3, 5, 6, 5, 7, 8, 9, 0, 0, 0, 0};
+  Sound sound1 = new Sound(samples);
+  System.out.println(Sound);
+  sound1.trimSilenceFromBeginning();
+  System.out.println(sound1);
+  System.out.println();
+  
+  int changes = sound1.limitAmplitude(5);
+  System.out.println(Sound1);
+  System.out.println(changes + " values changed.");
+  System.out.println();
+}

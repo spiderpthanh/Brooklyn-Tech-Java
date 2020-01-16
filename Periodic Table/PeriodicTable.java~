@@ -1,0 +1,53 @@
+public class PeriodicTable
+{
+ private Element[] table;
+ 
+ public PeriodicTable(int numOfElements)
+ {
+   table = new Element[numOfElements];
+ }
+public PeriodicTable(Element[] theElements)
+ {
+   table = theElements;
+ }
+ public void setElement(int i, Element e)
+ {
+   table[i] = e;
+ }
+ 
+ public Element getElement(String symbol)
+ {
+   for (Element e : table)
+     if(e.getSymbol().equals(symbol))
+         return e;
+   return null;
+ }
+ 
+ public int getLength()
+ {  return table.length; }
+ 
+ public String toString()
+ {
+   String output = "";
+   for (Element e : table)
+     output += e.toString() + "\n";
+   return output;
+ }
+ public void sortBySymbol()
+ {
+  for (int j = 0; j< table.length-1;j++)
+  {
+   int minIndex = j;
+   for (int k = j+1; k< table.length;k++)
+   {
+     if(table[k].getSymbol().compareTo(
+      table[minIndex].getSymbol()) <0)
+     {
+      minIndex = k;
+     }
+     
+  }
+ 
+ }
+}
+}

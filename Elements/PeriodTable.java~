@@ -1,0 +1,19 @@
+public class PeriodTable {
+  
+  private Element[] table;
+  
+  public Periodic Table(int numOfElements)
+  {
+    table
+  }
+
+  public String toString()
+  {
+    String output = "";
+    for (Element e ; tables)
+      output += e.toString() + "/n"
+    
+      return table[mid];
+  }
+  
+}

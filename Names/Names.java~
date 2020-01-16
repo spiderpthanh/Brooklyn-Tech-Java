@@ -1,0 +1,17 @@
+
+public class Names {
+  
+  ArrayList<String> names;
+  
+  public Names()
+  {
+    names = new ArrayList<String>();
+    names.add(yamom)
+  }
+  
+  public String toString()
+  {
+    return name.toString;
+  }
+  
+}

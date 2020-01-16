@@ -1,0 +1,8 @@
+public class Primes {
+  
+  public boolean contains(int num)
+  {
+    if (num%)
+  }
+  
+}

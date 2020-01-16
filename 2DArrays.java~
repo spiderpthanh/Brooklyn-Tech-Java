@@ -1,0 +1,50 @@
+public class 2DArrays()
+{
+  public static void main(String [] args)
+{
+    
+    int[][] myNumbers = ((7,3,-5),(2,7,5),(-17,51,2),(36,52,12),(12,5,13));
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    myNumbers[3][2] = 55;
+    System.out.println();
+    System.out.println();
+    System.out.println();
+  
+    turnUpsideDown(myNumbers);
+    for (int[] row : myNumbers)
+    {
+      System.out.print(num + ", ")
+    }
+    System.out.println();
+  }
+
+  public static int[] colTotals(int[][] numbers)
+  {
+    int[] totals = new int[numbers[0].length];
+    for (int c = 0; c = numbers[0].length; c++;)
+    
+  }
+
+  public static void turnUpsideDown(int[][] numbers)
+  {
+    for (int r = 0; r < numbers.length/2; r++)
+    {
+      temp = numbers[r];
+      numbers[r] = numbers[numbers.length - 1 - r];
+      numbers[numbers.length-1-r] = temp;
+    }
+  }
+  
+  public static void flipSideways(int[][] numbers)
+  {
+    for (int r = 0; r < numbers.length/2; r++)
+    {
+      temp = numbers[r];
+      numbers[r] = numbers[numbers.length - 1 - r];
+      numbers[numbers.length-1-r] = temp;
+    }
+  }
+}
+

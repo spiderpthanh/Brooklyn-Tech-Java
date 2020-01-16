@@ -1,0 +1,79 @@
+
+public class Sneaker {
+ // instance variables
+  private String name;
+  private int price;
+  private String designer;
+  private String company;
+  private int yearReleased;
+  private String primaryMaterial;
+  private String sport;
+  private boolean hiTop;
+  
+ //constuctor
+ public Element(String name, int price, String designer,
+     String company, int yearRel,
+     String primMat, String sport, boolean hiTop)
+ {
+  this.name = name;
+  price = retailPrice;
+  this.designer = designer;
+  yearReleased = yearRel;
+  primaryMaterial = primMat;
+  this.sport = sport;
+  this.hiTop = hiTop;
+ }
+  
+ //accessors
+ public String getName()   { return name; }
+ public int getPrice() { return price; }
+ public String getDesigner()  { return designer; }
+ public String getCompany() { return company; }
+ public int getYearReleased() { return yearReleased; }
+ public String getPrimaryMaterial()  { return primaryMaterial; }
+ public String getSport()  { return sport; }
+ public boolean hiTop()  { return hiTop; }
+}
+ public String toString()
+ {
+  String output = "";
+  
+  if (atomicNumber < 10)
+   output += getSpaces(2) + atomicNumber;
+  else if (atomicNumber < 100)
+   output += getSpaces(1) + atomicNumber;
+  else
+   output += atomicNumber;
+   
+  output += getSpaces(2);
+  
+  output += name;
+  output += getSpaces(15 - name.length());
+  
+  output += symbol + getSpaces(5 - symbol.length());
+  
+  String weight = "";
+  if (atomicWeight < 10.0)
+   weight = getSpaces(2) + atomicWeight;
+  else if (atomicWeight < 100.0)
+   weight = getSpaces(1) + atomicWeight;
+  else
+   weight += atomicWeight;
+  output += weight + getSpaces(11 - weight.length());
+  
+  output += family;
+  output += getSpaces(18 - family.length());
+  
+  return output;
+ }
+
+ public static String getSpaces(int numOfSpaces)
+ {
+  String spaces = "";
+  for (int i = 0; i < numOfSpaces; i++)
+   spaces += " ";
+   
+  return spaces;
+ }
+
+}
